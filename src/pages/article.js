@@ -10,7 +10,7 @@ export default ({ location }) => {
       <div className="row">
         <div className="col-12">
           <h2>My Article</h2>
-          <img src={catSrc} />
+          <img src={catSrc} alt="Cat!" />
         </div>
         <div className="col-12 ">
           <h4>Introduction</h4>

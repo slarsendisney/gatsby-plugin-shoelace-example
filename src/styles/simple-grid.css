@@ -2,11 +2,20 @@
 
 /* ROOT FONT STYLES */
 
-* {
+.content {
   font-family: var(--sl-font-sans);
   color: var(--sl-color-gray-20);
-  
 }
+
+
+a {
+  color: var(--sl-color-gray-20);
+}
+
+pre>* {
+  font-size: var(--sl-font-size-small) !important; 
+}
+
 
 h1 {
   font-size: var(--sl-font-size-xxx-large);

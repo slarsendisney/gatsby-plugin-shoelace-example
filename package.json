@@ -17,7 +17,8 @@
     "gatsby": "^2.23.12",
     "gatsby-plugin-shoelace": "0.0.7",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-syntax-highlighter": "^13.0.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"
