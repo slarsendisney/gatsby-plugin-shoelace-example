@@ -6,35 +6,48 @@ const capitalize = s => {
   return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
-const Links = ["", "forms", "article"]
+const Links = ["", "cards", "forms", "article"]
 export default ({ children, location }) => {
-  console.log(location.pathname)
   return (
     <div className="container">
-      <div className="row">
+      <div className="row center">
         <div className="col-12">
-          <h1>Example Gatsby Site.</h1>
-          <p>Gatsby + Shoelace. A match made in heaven.</p>
-          <sl-tab-group>
-            {Links.map(link => (
-              <sl-tab
-                slot="nav"
-                panel="general"
-                active={location.pathname === `/${link}`}
-              >
-                <Link to={`/${link}`} style={{ textDecoration: "none" }}>
-                  {link === "" ? "Home" : capitalize(link)}
-                </Link>
-              </sl-tab>
-            ))}
-          </sl-tab-group>
+          <h1 className="">Example Gatsby Site.</h1>
+          <p className="margin-small">
+            Gatsby + Shoelace. A match made in heaven.
+          </p>
         </div>
+
+        <div className="col-2 hidden-sm" />
+        {Links.map(link => (
+          <div className="col-2">
+            <Link
+              to={`/${link}`}
+              style={{ textDecoration: "none" }}
+              className="center"
+            >
+              <p
+                className={
+                  location.pathname === `/${link}` ? "active-link" : ""
+                }
+              >
+                {link === "" ? "Home" : capitalize(link)}
+              </p>
+            </Link>
+          </div>
+        ))}
+        <div className="col-2 hidden-sm" />
       </div>
+
       {children}
       <div className="row">
         <div className="col-12 center">
           <p>
-            Gatsby example and plugin developed with <sl-icon name="heart" /> by{" "}
+            Gatsby example and{" "}
+            <a href="https://www.gatsbyjs.org/packages/gatsby-plugin-shoelace">
+              plugin
+            </a>{" "}
+            developed with <sl-icon name="heart" /> by{" "}
             <a href="https://twitter.com/SamLarsenDisney">@SamLarsenDisney</a>.
           </p>
           <p>

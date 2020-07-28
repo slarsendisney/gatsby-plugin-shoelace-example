@@ -5,6 +5,7 @@
 * {
   font-family: var(--sl-font-sans);
   color: var(--sl-color-gray-20);
+  
 }
 
 h1 {
@@ -32,6 +33,13 @@ p {
   box-shadow: var(--sl-shadow-medium);
 }
 
+.active-link{
+  color: var(--sl-color-primary-50);
+}
+
+.margin-small {
+  margin: var(--sl-spacing-xx-small);
+}
 
 /**
 *** SIMPLE GRID
