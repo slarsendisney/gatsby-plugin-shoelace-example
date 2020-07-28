@@ -8,6 +8,8 @@
   Gatsby + Shoelace Example
 </h1>
 
+A demo site with gatsby-plugin-shoelace.
+
 ## 🛠 Installation & Set Up
 
 1. Install the Gatsby CLI
